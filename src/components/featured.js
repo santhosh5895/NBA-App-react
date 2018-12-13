@@ -14,7 +14,6 @@ const generateSlides = ({slides}) => {
          return (
             <Slider {...settings}>
                 {slides.map((item)=>{
-                    console.log({background:`url(/images/covers/${item.cover}) no-repeat`});
                     return (
                         <div key={item.id}>
                             <div style={{background:`url(/images/covers/${item.cover}) no-repeat`}} className="item_slider">
