@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Featured from './featured';
 import Subscriptions from './subscriptions';
 import Blocks from './blocks';
-import Poll from './poll'
+import Poll from './poll';
 
 const URL = "http://localhost:3004/home";
 export default class Home extends Component{

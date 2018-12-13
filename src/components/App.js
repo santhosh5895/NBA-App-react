@@ -6,6 +6,7 @@ import Header from './header';
 import Footer from './footer';
 import Home from './home';
 import Teams from './teams';
+import Team from './team';
 
 export default class App extends Component{
     render(){
@@ -15,6 +16,7 @@ export default class App extends Component{
                     <Header/>
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/teams' component={Teams}/>
+                    <Route exact path='/team/:id' component={Team}/>
                     <Footer/>
                 </div>
             </BrowserRouter>
