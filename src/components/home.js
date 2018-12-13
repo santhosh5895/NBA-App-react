@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 // Components
 import Featured from './featured';
-import Subscriptions from './subscriptions'
+import Subscriptions from './subscriptions';
+import Blocks from './blocks';
+
 const URL = "http://localhost:3004/home";
 export default class Home extends Component{
     constructor(props){
@@ -22,6 +24,7 @@ export default class Home extends Component{
             <div>
                 <Featured slides={this.state.home.slider}/>
                 <Subscriptions/>
+                <Blocks blocks={this.state.home.blocks} />
             </div>
         )
     }
